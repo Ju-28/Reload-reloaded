@@ -1,0 +1,1061 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0; /* Set the width of the scrollbar */
+  }
+  
+  /* ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 3px;
+  } */
+
+
+* {
+    background-color: black;
+    color: white;
+}
+
+#app {
+    height: fit-content;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#wrapper {
+    height: 100%;
+    position: relative;
+}
+
+template {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+    font-size: larger;
+    color: white;
+    border-top: solid white 0.1rem;
+    padding-bottom: 1rem;
+    z-index: 1000000;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    margin: 1rem;
+}
+
+#footer-instagram {
+    font-size: xx-large;
+}
+
+.footer a:visited{
+    color: white;
+}
+.section-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    animation: fadeIn 1s;
+}
+
+.page-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Styling for HomeView.vue */
+
+.home-img-wrapper {
+    margin-top: 10rem;
+    max-width: 85%;
+    height: auto;
+}
+.home-img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    background-color: transparent;
+    padding: 0;
+    z-index: 0;
+    opacity: 0;
+}
+
+.flicker-animation {
+    animation: flicker 1s forwards;
+}
+
+@keyframes flicker {
+    10% {
+        filter: drop-shadow(0.3rem 0.3rem 1rem #0013FF);
+        opacity: 0.3;
+    }
+    22% {
+        filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.1;
+    }
+    30% {
+        filter: drop-shadow(-0.8rem 0.5rem 0.8rem #0013FF);
+        opacity: 0.5;
+    }
+    37% {
+        filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.4;
+    }
+    45% {
+        filter: drop-shadow(-1rem 0 1rem #0013FF);
+    }
+    58% {
+        filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.4;
+    }
+    75% {
+        filter: drop-shadow(0.2rem -0.5rem 0.7rem #0013FF);
+        opacity: 0.8;
+    }
+    92% {
+        filter: drop-shadow(-1rem 0 1rem #0013FF);
+    }
+    100% {
+        filter: drop-shadow(0 0 3rem #0013FF);
+        opacity: 1;
+    }
+}
+
+.flicker-off {
+    animation: flicker-off 1s;
+}
+
+@keyframes flicker-off {
+    0% {
+        filter: drop-shadow(0 0 3rem #0013FF);
+        opacity: 1;
+    }
+    22% {
+        filter: drop-shadow(-1rem 0 1rem #0013FF);
+        opacity: 0.8;
+    }
+    30% {
+        filter: drop-shadow(0.2rem -0.5rem 0.7rem #0013FF);
+    }
+    37% {
+        filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.4;
+    }
+    45% {
+        filter: drop-shadow(-1rem 0 1rem #0013FF);
+    }
+    55% {
+        opacity: 0.4;
+    }
+    58% {
+        filter: drop-shadow(0 0 0 #0013FF);
+    }
+    70% {
+        opacity: 0.5;
+    }
+    75% {
+        filter: drop-shadow(-0.8rem 0.5rem 0.8rem #0013FF);
+    }
+    92% {
+        filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.3;
+    }
+    100% {
+        filter: drop-shadow(0 0 0);
+        opacity: 0.3;
+        /* heigt: 0; */
+    }
+}
+
+.scroll-down-button {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    margin-top: 10rem;
+    color: white;
+    font-size: 8rem;
+    transform: scale(2,1);
+}
+
+.scroll-down-button i {
+    position: relative;
+    animation: scrollDown 2s ease-in-out infinite;
+  }
+
+@keyframes scrollDown {
+    0% {
+      top: 0;
+      opacity: 0.4;
+    }
+    50% {
+      top: 30px;
+      text-shadow: 0 0 5px #87CEFA, 0 0 30px #87CEFA, 0 0 40px #87CEFA;
+      opacity: 1;
+    }
+    100% {
+      top: 0;
+      opacity: 0.4;
+    }
+  }
+
+
+.new-content {
+    margin-top: 35rem;
+    margin-bottom: 15rem;
+    padding-top: 10rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;  
+    grid-template-areas: 
+                        "Vision Event"
+                        "Experience Event";
+    row-gap: 5rem;
+    column-gap: 7rem;
+}
+
+.more-content-section-1  {
+    grid-area: Vision;
+}
+
+.more-content-section-1 section {
+    padding-inline: 3rem;
+}
+
+
+.more-content-section-2  {
+    grid-area: Event;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    /* padding-inline: 3rem; */
+    text-shadow: 0 0 30px black;
+    opacity: 1;
+}
+
+.more-content-section-2 section {
+    padding-inline: 3rem;
+}
+
+.more-content-section-2 * {
+    background-color: transparent;
+}
+
+.more-content-section-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.more-content-section-2 a:hover {
+    text-decoration: underline;
+}
+
+.recent-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: -1;
+  }
+
+
+.more-content-section-3  {
+    grid-area: Experience;
+}
+
+.more-content-section-3 section {
+    padding-inline: 3rem;
+}
+
+.more-content-headline {
+    src: url("src/assets/fonts/NokiaKokia.woff2");
+    font-family: 'NokiaKokia';
+    font-size: 350%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+    background-color: transparent;
+    height: inherit;
+    word-wrap: break-word;
+}
+
+.vision-content {
+    display: block;
+    font-size: 175%;
+    text-align: justify;
+    background-color: transparent;
+}
+
+.next-event-content {
+    display: block;
+    font-size: 175%;
+    text-align: justify;
+    background-color: transparent;
+}
+
+.event-info {
+    margin-top: 1rem;
+    background-color: transparent;
+}
+
+.about-event {
+    margin-top: 3rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+summary {
+    margin-bottom: 1.5rem;
+}
+
+.tickets-n-djs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#djs {
+    margin: 0;
+}
+
+
+.experience-content {
+    display: block;
+    font-size: 175%;
+    text-align: justify;
+    background-color: transparent;
+    overflow: auto;
+}
+
+.experience-content a {
+    font-style: italic;
+    color: #ee1b24;
+    text-decoration: underline;
+}
+
+.experience-content a:last-child {
+    font-style: italic;
+    color: #0013FF;
+    text-decoration: underline;
+}
+
+.experience-content a:nth-child(2) {
+    font-style: italic;
+    color: #ff5500;
+    text-decoration: underline;
+}
+
+.new-content a:hover {
+    color: white;
+}
+
+.reload-word {
+    src: url("src/assets/fonts/NokiaKokia.woff27");
+    font-family: 'NokiaKokia';
+    font-size: medium;
+    height: inherit;
+}
+
+.hidden {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+.disappear {
+    animation: disappear 1s forwards;
+}
+
+@keyframes disappear {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.page-galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 5rem;
+}
+
+.galery-headline {
+    text-align: center;
+    color: white;
+    font-family: 'NokiaKokia';
+    font-size: 10vw;
+    font-style: italic;
+    letter-spacing: 5px;
+    src: url("src/assets/fonts/NokiaKokia.woff2");
+}
+
+.page-galery {
+    text-align: center; /* Center-align the images within the page */
+    padding: 20px;
+  }
+  
+  .galery-header {
+    margin-bottom: 20px;
+  }
+  
+  .galery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem; /* Adjust the gap between images as needed */
+  }
+  
+  .image1, .image2, .image3,
+  .image4, .image5, .image6,
+  .image7, .image8, .image9 {
+    width: calc(33.33% - 10px); /* Adjust the width to fit within three columns with gaps */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+.recent-img span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: auto;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(25rem);
+    -webkit-box-reflect: below 0px linear-graident(transparent, transparent, #0004);
+}
+
+.recent-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-hover {
+    visibility: hidden;
+}
+
+/* Styling for tickets.vue */
+.ticket-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.ticket-headline {
+    text-align: center;
+    color: white;
+    font-family: 'NokiaKokia';
+    font-size: 10vw;
+    font-style: italic;
+    letter-spacing: 5px;
+    src: url("src/assets/fonts/NokiaKokia.woff2");
+}
+
+.ticket-headline-2 {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#tickets {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-ticket {
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 5rem;
+    min-height: 100vh;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.ticket-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30rem;
+    width: 9rem;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-color: white;
+    flex: 1;
+    margin: 3rem;
+}
+
+.ticket-img {
+    width: 12.5rem;
+    height: 7.8rem;
+    background-image: url("src/assets/media/reload_weiß.png");
+    transform: scaleX(1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    filter: drop-shadow(0 0 10px #0013FF);
+    flex: 1;
+    position: absolute;
+
+}
+
+.ticket-frame:hover {
+    animation: neon 1.25s ease-in-out infinite alternate;
+    
+}
+
+.ticket-frame:hover .ticket-img {
+    animation: mirror 5s ease-in-out infinite;
+}
+
+.ticket-frame:hover .ticket-link {
+    box-shadow: 0 0 10px #0013FF;
+    text-shadow: 0 0 20px #0013FF;
+}
+
+.ticket-frame:hover .ticket-price{
+    text-shadow: 0 0 20px #0013FF;
+}
+
+
+.ticket-price {
+    transform: translate(0, -8rem);
+    color: white;
+    font-family: 'NokiaKokia';
+    font-size: larger;
+    src: url("src/assets/fonts/NokiaKokia.woff2");
+    
+}
+
+.ticket-link {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transform: translate(0, 10rem);
+    font-family: 'NokiaKokia';
+    src: url("src/assets/fonts/NokiaKokia.woff2");
+}
+
+.ticket-link:visited{
+    color: white;
+}
+
+.ticket-info {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ticket-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 1rem;
+}
+
+.ticket-description p {
+    font-weight: 900;
+}
+
+.ticket-description-list {
+    width: 14rem;
+    flex: 1;
+    list-style: disc;
+    font-size: larger;
+}
+
+.ticket-description-list li {
+    padding: 5px;
+}
+
+.mirror-animation {
+    animation: mirror 5s ease-in-out infinite;
+}
+
+/* Keyframes for animations */
+@keyframes mirror {
+    0% {
+        filter: drop-shadow(0 0 3rem #0013FF);
+        opacity: 1;
+        transform: scaleX(1);
+    }
+    50% {
+        filter: drop-shadow(0 0 3rem #0013FF);
+        opacity: 1;
+        transform: scaleX(-1);
+        
+    }
+    100% {
+        filter: drop-shadow(0 0 3rem #0013FF);
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes neon {
+    from {
+        box-shadow: 0 0 20px #87CEFA, 0 0 30px #87CEFA, 0 0 40px #87CEFA;
+    }
+    to {
+        box-shadow: 0 0 5px #87CEFA, 0 0 10px #87CEFA, 0 0 15px #87CEFA;
+    }
+}
+
+.page-contact {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    translate: 0 10%;
+    /* justify-content: center; */
+}
+
+.contact-headline {
+    text-align: center;
+    color: white;
+    font-family: 'NokiaKokia';
+    font-size: 7vw;
+    font-style: italic;
+    letter-spacing: 5px;
+    src: url("src/assets/fonts/NokiaKokia.woff2");
+}
+
+.form-style-1 {
+	margin:10px auto;
+    width: 40vw;
+    height: auto;
+	padding: 1rem 1rem 1rem 1rem;
+	font: 2rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 2rem 0 0 0;
+}
+.form-style-1 label{
+	margin:0 0 1rem 0;
+	padding: 0px;
+	display: block;
+	font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #BEBEBE;
+    border-radius: 10px 10px 10px 10px;
+	padding: 7px;
+	margin: 0px;
+    transition: all 0.30s ease-in-out;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	-moz-box-shadow: 0 0 8px #87CEFA;
+	-webkit-box-shadow: 0 0 8px #87CEFA;
+	box-shadow: 0 0 8px #87CEFA;
+	border: 1px solid #87CEFA;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+    height: 4rem;
+    font-size: 2rem;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+    height: 4rem;
+    font-size: 2rem;
+}
+.form-style-1 .field-select{
+	width: 100%;
+    font-size: 2rem;
+}
+.form-style-1 .field-textarea{
+	height: 10rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+    width: 25%;
+    translate: 150% 0;
+    margin-bottom: 10rem;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.form-style-1 .required{
+	color:red;
+}
+
+.form-style-1 .field-divided:nth-child(3) {
+    margin-left: 2%;
+}
+
+
+.error-message {
+    background-color: #ff7272;
+    padding: 5px;
+    font-size: large;
+    border-radius: 5px;
+    margin-top: 2rem;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+.page-impressum {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    translate: 0 10%;
+    max-width: 1200px;
+    margin-inline: 3rem;
+    margin-bottom: 25rem;
+}
+
+.page-impressum h2 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.impressum-headline {
+    text-align: center;
+    color: white;
+    font-family: 'NokiaKokia';
+    font-size: 7vw;
+    font-style: italic;
+    letter-spacing: 5px;
+    margin-bottom: 5rem;
+    src: url("src/assets/fonts/NokiaKokia.woff2")
+}
+
+.legal-details {
+    align-self: flex-start;
+}
+
+.legal-details p {
+    margin-block: 1rem;
+}
+
+.liabilities h3 {
+    margin-top: 3em;
+}
+
+.page-impressum h3 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: larger;
+    align-self: flex-start;
+}
+
+
+@media (max-width: 1025px) {
+
+    #tickets {
+        display: block;
+        max-width: 400px;       
+    }
+    
+    .ticket-frame {
+        width: 85%;
+        margin: 1.5rem;
+    }
+
+    .ticket-info {
+        display: block;
+        max-width: 400px;      
+         
+    }
+    
+    .ticket-description-list {
+        width: 85%;
+    }
+
+    .page-ticket iframe {
+        display: block;
+        max-width: 400px;
+        /* Add shrinking */
+    }
+}
+
+@media (max-height: 1300px) {
+
+    .home-img-wrapper {
+        margin-top: 10rem;
+        max-width: 55%;
+        height: auto;
+    }
+
+    .scroll-down-button {
+        margin-top: 3rem;
+        color: white;
+        font-size: 5rem;
+    }
+}
+
+@media (max-height: 900px) {
+    .new-content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;    
+    }
+
+    .more-content-headline {
+        font-size: 200%;
+    }
+
+    .scroll-down-button {
+        font-size: 3rem;
+    }
+
+    .controls {
+        height: 0;
+        width: 0;
+        visibility: 0;
+    }
+
+    
+    .controls button {
+        height: 0;
+        width: 0;
+        visibility: 0;
+    }
+
+    
+    .controls i {
+        height: 0;
+        width: 0;
+        visibility: 0;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .new-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35rem;
+        padding: 0;
+        gap: 3rem;
+    }
+
+    .home-img-wrapper {
+        max-width: 85%;
+    }
+
+    .scroll-down-button {
+        font-size: 3rem;
+    }
+
+    
+    .galery-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .image1, .image2, .image3,
+    .image4, .image5, .image6,
+    .image7, .image8, .image9 {
+      width: calc(50% - 10px); /* Two images per row on smaller screens */
+    } 
+    
+    .tickets-n-djs {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact-headline {
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 1350px) {
+
+    .form-style-1 {
+        margin:10px auto;
+        width: 80vw;
+        height: auto;
+        padding: 1rem 1rem 1rem 1rem;
+        font: 1rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+    .form-style-1 .field-divided{
+        font-size: 1rem;
+    }
+    
+    .form-style-1 .field-long{
+        font-size: 1rem;
+    }
+    .form-style-1 .field-select{
+        font-size: 1rem;
+    }
+    .form-style-1 .field-textarea{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1200px) and (max-height: 1200px) {
+
+    .new-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35rem;
+        gap: 3rem;
+    }
+
+    .home-img-wrapper {
+        max-width: 85%;
+    }
+
+    .scroll-down-button {
+        font-size: 3rem;
+    }
+
+    .controls {
+        height: 0;
+        width: 0;
+        visibility: 0;
+    }
+
+    
+    .controls button {
+        height: 0;
+        width: 0;
+        visibility: 0;
+    }
+
+    
+    .controls i {
+        height: 0;
+        width: 0;
+        visibility: 0;
+    }
+
+}
+
+@media (max-width: 412px) and (max-height: 915px) {
+    
+    .new-content {
+        margin-top: 40rem;
+    }
+    .new-content > * {
+        max-width: 400px;
+    }
+
+    .new-content h3 {
+        font-size: x-large;
+        margin-inline: 3rem;
+    }
+
+    .new-content section {
+        font-size: medium;
+    }
+
+    .image1, .image2, .image3,
+    .image4, .image5, .image6,
+    .image7, .image8, .image9 {
+      width: calc(100% - 10px); /* Two images per row on smaller screens */
+    } 
+
+}
