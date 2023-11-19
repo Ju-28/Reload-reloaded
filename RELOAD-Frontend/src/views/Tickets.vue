@@ -9,22 +9,22 @@
             <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">10 EURO</p>
                 <p class="ticket-img"></p>
-                <a class="ticket-link" href="https://www.eventim-light.com/de/login?redirect=%2Fdashboard" target="_blank">PRE-SALE</a>
+                <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">PRE-SALE</a>
             </div>
-            <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
+            <!-- <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">12 EURO</p>
                 <p class="ticket-img"></p>
-                <a class="ticket-link" href="https://www.eventim-light.com/de/login?redirect=%2Fdashboard" target="_blank">EARLY BIRD</a>
+                <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">EARLY BIRD</a>
             </div>
             <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">17 EURO</p>
                 <p class="ticket-img"></p>
-                <a class="ticket-link" href="https://www.eventim-light.com/de/login?redirect=%2Fdashboard" target="_blank">STANDARD</a>
-            </div>
+                <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">STANDARD</a>
+            </div> -->
         </div>
 
         <div class="ticket-info">
-            <div class="ticket-description">
+            <!-- <div class="ticket-description">
                 <p class="ticket-description-head">PRE-SALE</p>
                 <ul class="ticket-description-list">
                     <li>Available even before announcment of the next event, watch out!</li>
@@ -32,27 +32,27 @@
                     <li>Limited quantity</li>
                     <li>Cheapest ticket with 10€</li>
                 </ul>
-            </div>
+            </div> -->
             <div class="ticket-description">
                 <p class="ticket-description-head">EARLY BIRD</p>
                 <ul class="ticket-description-list">
                     <li>Avalaible on date of announcment of the next event</li>
                     <li>For all those who are not sure yet</li>
                     <li>Limited quantity</li>
-                    <li>Middle price category with 12€</li>
+                    <li>Middle price category with 10€</li>
                 </ul>
             </div>
-            <div class="ticket-description">
+            <!-- <div class="ticket-description">
                 <p class="ticket-description-head">STANDARD</p>
                 <ul class="ticket-description-list">
                     <li>Avalaible two weeks after announcment</li>
                     <li>For all those who want to party spontaneously</li>
                     <li>Most expensive ticket with 17€</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
 
-        <div style="padding: 0;">
+        <!-- <div style="padding: 0;">
             <iframe 
             id="eventim-light-iframe-v2-64777f477c8b771e1c8224fe"
             src="https://www.eventim-light.com/de/a/64777f477c8b771e1c8224fe/iframe/"
@@ -63,7 +63,7 @@
             frameborder="0"
             name="eventim-light-iframe-v2-64777f477c8b771e1c8224fe">
             </iframe>
-        </div>
+        </div> -->
 
     </div>   
 </template>
