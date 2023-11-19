@@ -12,6 +12,11 @@
     border-radius: 3px;
   } */
 
+  @font-face {
+    font-family: 'NokiaKokia';
+    src: url("src/assets/fonts/NokiaKokia.ttf");
+  }
+
 
 * {
     background-color: black;
@@ -206,6 +211,7 @@ footer p {
     color: white;
     font-size: 8rem;
     transform: scale(2,1);
+    cursor: pointer;
 }
 
 .scroll-down-button i {
@@ -301,7 +307,6 @@ footer p {
 }
 
 .more-content-headline {
-    src: url("s3://reloadwavmedia/fonts/NokiaKokia.woff2");
     font-family: 'NokiaKokia';
     font-size: 350%;
     margin-top: 1.5rem;
@@ -383,7 +388,6 @@ summary {
 }
 
 .reload-word {
-    src: url("src/assets/fonts/NokiaKokia.woff27");
     font-family: 'NokiaKokia';
     font-size: medium;
     height: inherit;
@@ -428,7 +432,6 @@ summary {
     font-size: 10vw;
     font-style: italic;
     letter-spacing: 5px;
-    src: url("src/assets/fonts/NokiaKokia.woff2");
 }
 
 .page-galery {
@@ -501,7 +504,6 @@ summary {
     font-size: 10vw;
     font-style: italic;
     letter-spacing: 5px;
-    src: url("src/assets/fonts/NokiaKokia.woff2");
 }
 
 .ticket-headline-2 {
@@ -547,7 +549,6 @@ summary {
 .ticket-img {
     width: 12.5rem;
     height: 7.8rem;
-    background-image: url("src/assets/media/reload_weiß.png");
     transform: scaleX(1);
     background-size: contain;
     background-repeat: no-repeat;
@@ -555,7 +556,6 @@ summary {
     filter: drop-shadow(0 0 10px #0013FF);
     flex: 1;
     position: absolute;
-
 }
 
 .ticket-frame:hover {
@@ -582,7 +582,6 @@ summary {
     color: white;
     font-family: 'NokiaKokia';
     font-size: larger;
-    src: url("src/assets/fonts/NokiaKokia.woff2");
     
 }
 
@@ -595,7 +594,6 @@ summary {
     padding: 1rem;
     transform: translate(0, 10rem);
     font-family: 'NokiaKokia';
-    src: url("src/assets/fonts/NokiaKokia.woff2");
 }
 
 .ticket-link:visited{
@@ -684,7 +682,6 @@ summary {
     font-size: 7vw;
     font-style: italic;
     letter-spacing: 5px;
-    src: url("src/assets/fonts/NokiaKokia.woff2");
 }
 
 .form-style-1 {
@@ -826,7 +823,7 @@ select{
     font-style: italic;
     letter-spacing: 5px;
     margin-bottom: 5rem;
-    src: url("src/assets/fonts/NokiaKokia.woff2")
+    src: url("")
 }
 
 .legal-details {
