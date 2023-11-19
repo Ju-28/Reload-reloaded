@@ -40,6 +40,6 @@ export default defineConfig({
   },
   // Add a rule for font files
   optimizeDeps: {
-    include: ['@fontsource/src/assets/fonts/NokiaKokia.ttf'],
+    include: ['@fontsource/assets/fonts/NokiaKokia.ttf'],
   },
 });
