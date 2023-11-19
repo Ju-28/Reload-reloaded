@@ -4,8 +4,8 @@
             <div class="legal-details">
                 <h2>Angaben gemäß § 5 TMG</h2>
                 <p>Martin Lelke<br> 
-                Musterweg<br> 
-                12345 Düsseldorf <br> 
+                Stockkampstraße 47<br> 
+                40477 Düsseldorf <br> 
                 </p>
                 <p> <h3>Vertreten durch:</h3>
                 Martin Lelke<br>
