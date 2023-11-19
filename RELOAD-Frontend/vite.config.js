@@ -38,8 +38,4 @@ export default defineConfig({
   build: {
     assetsDir: 'assets',
   },
-  // Add a rule for font files
-  optimizeDeps: {
-    include: ['@fontsource/src/assets/fonts/NokiaKokia.ttf'],
-  },
 });

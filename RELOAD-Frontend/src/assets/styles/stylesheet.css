@@ -14,7 +14,7 @@
 
   @font-face {
     font-family: 'NokiaKokia';
-    src: url("assets/fonts/NokiaKokia.ttf");
+    src: url("../fonts/NokiaKokia.ttf");
   }
 
 
@@ -881,6 +881,11 @@ select{
     }
     
     .ticket-frame {
+        width: 85%;
+        margin: 1.5rem;
+    }
+
+    .ticket-frame-disabled {
         width: 85%;
         margin: 1.5rem;
     }
