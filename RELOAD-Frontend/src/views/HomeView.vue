@@ -42,8 +42,8 @@
               <section class="next-event-content">
                 <div class="next-event-list">
                   <ul>
-                    <li class="time-and-date">When: Coming Soon!</li>
-                    <li class="location">Where: Coming Soon!</li> <!-- Also possible to insert a google maps link to the location -->
+                    <li class="time-and-date">When: 24.11.23</li>
+                    <li class="location">Where: @ Club Subway Cologne</li> <!-- Also possible to insert a google maps link to the location -->
                   </ul>
                 </div>
                 <details class="event-info">
@@ -51,9 +51,9 @@
                   <div class="tickets-n-djs">
                     <ul class="tickets-list">
                       <a id="event-tickets" href="/tickets">Tickets:</a>
-                      <li>Pre-Sale: 10€</li>
-                      <li>Early Bird: 12€</li>
-                      <li>Standard: 17€</li>
+                      <li>Guestlist: 10€</li>
+                      <li>Box-Office: 12€</li>
+                      <!-- <li>Standard: 17€</li> -->
                     </ul>
                     
                     <ul class="djs-list">
@@ -61,6 +61,7 @@
                       <li><a href="https://www.instagram.com/chiefinspectorlelke/" target="_blank"><i class="fa-solid fa-arrow-right"></i> CHIEF</a></li>
                       <li><a href="https://www.instagram.com/bash.ofc/" target="_blank"><i class="fa-solid fa-arrow-right"></i> BA$H</a></li>
                       <li><a href="https://www.instagram.com/fabiana.stwn/" target="_blank"><i class="fa-solid fa-arrow-right"></i> Fabiana</a></li>
+                      <li><a href="https://www.instagram.com/i.am.keisha/" target="_blank"><i class="fa-solid fa-arrow-right"></i> Keisha</a></li>
                     </ul>
                   </div>
                   <h5 class="about-event">About the next event</h5>

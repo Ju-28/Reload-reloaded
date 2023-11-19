@@ -41,7 +41,7 @@ const routes = [
   // },
   {
     path: '/impressum',
-    name: 'impressum',
+    name: 'Impressum',
     component: Impressum
   },
 ]
