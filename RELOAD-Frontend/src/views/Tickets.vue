@@ -8,17 +8,17 @@
         <div id="tickets">
             <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">10 EURO</p>
-                <p class="ticket-img"></p>
+                <img src="https://reloadwavmedia.s3.eu-central-1.amazonaws.com/Images/reload_wei%C3%9F.png" class="ticket-img">
                 <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">PRE-SALE</a>
             </div>
             <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">12 EURO</p>
-                <p class="ticket-img"></p>
+                <img src="https://reloadwavmedia.s3.eu-central-1.amazonaws.com/Images/reload_wei%C3%9F.png" class="ticket-img">
                 <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">EARLY BIRD</a>
             </div>
             <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">17 EURO</p>
-                <p class="ticket-img"></p>
+                <img src="https://reloadwavmedia.s3.eu-central-1.amazonaws.com/Images/reload_wei%C3%9F.png" class="ticket-img">
                 <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">STANDARD</a>
             </div>
         </div>

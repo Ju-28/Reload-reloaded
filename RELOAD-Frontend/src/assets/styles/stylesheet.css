@@ -549,7 +549,6 @@ summary {
 .ticket-img {
     width: 12.5rem;
     height: 7.8rem;
-    background-image: url("src/assets/media/reload_weiß.png");
     transform: scaleX(1);
     background-size: contain;
     background-repeat: no-repeat;
