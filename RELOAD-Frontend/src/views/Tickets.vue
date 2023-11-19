@@ -11,7 +11,7 @@
                 <p class="ticket-img"></p>
                 <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">PRE-SALE</a>
             </div>
-            <!-- <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
+            <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">12 EURO</p>
                 <p class="ticket-img"></p>
                 <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">EARLY BIRD</a>
@@ -20,7 +20,7 @@
                 <p class="ticket-price">17 EURO</p>
                 <p class="ticket-img"></p>
                 <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">STANDARD</a>
-            </div> -->
+            </div>
         </div>
 
         <div class="ticket-info">
