@@ -25,7 +25,7 @@
   
   <footer>
       <p class="has-text-centered" id="footer-instagram"><a href="https://www.instagram.com/reload.wav" target="_blank" class="fab fa-instagram"></a></p>
-      <p class="has-text-centered"><a href="/impressum">Impressum</a></p>
+      <p class="has-text-centered"><router-link to="/impressum">Impressum</router-link></p>
       <p class="has-text-centered">©2023 by <span class="reload-word">RELOAD</span></p>
     </footer>
 </template>
