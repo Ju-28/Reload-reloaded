@@ -65,7 +65,10 @@
                     </ul>
                   </div>
                   <h5 class="about-event">About the next event</h5>
-                  <p>Stay tuned!</p>
+                  <p>We're excited to present <a href="https://www.instagram.com/chivasregal/">&rsaquo;Chivas Regal&lsaquo;</a>
+                     as our partners for the upcoming event on november 24th! 
+                    Enjoy free drinks in the first hour (11pm - midnight). After that, 
+                    it's only gonna be 6€ per drink for the rest of the night. You better come early!</p>
                 </details>
               </section>
         </div>
