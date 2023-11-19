@@ -929,6 +929,10 @@ select{
         gap: 3rem;    
     }
 
+    .more-content-section-2  {
+        text-shadow: 0 0 15px black;
+    }
+
     .more-content-headline {
         font-size: 200%;
     }
@@ -967,6 +971,10 @@ select{
         margin-top: 35rem;
         padding: 0;
         gap: 3rem;
+    }
+
+    .more-content-section-2  {
+        text-shadow: 0 0 15px black;
     }
 
     .home-img-wrapper {
@@ -1079,6 +1087,10 @@ select{
 
     .new-content section {
         font-size: medium;
+    }
+
+    .more-content-section-2  {
+        text-shadow: 0 0 15px black;
     }
 
     .image1, .image2, .image3,
