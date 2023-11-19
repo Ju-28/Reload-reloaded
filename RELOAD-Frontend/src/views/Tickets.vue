@@ -11,20 +11,20 @@
                 <img src="https://reloadwavmedia.s3.eu-central-1.amazonaws.com/Images/reload_wei%C3%9F.png" class="ticket-img">
                 <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">PRE-SALE</a>
             </div>
-            <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
+            <div class="ticket-frame-disabled" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">12 EURO</p>
                 <img src="https://reloadwavmedia.s3.eu-central-1.amazonaws.com/Images/reload_wei%C3%9F.png" class="ticket-img">
-                <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">EARLY BIRD</a>
+                <a class="ticket-link-disabled" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">EARLY BIRD</a>
             </div>
-            <div class="ticket-frame" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
+            <div class="ticket-frame-disabled" onmouseover="this.classList.add('hover')" onmouseout="this.classList.remove('hover')">
                 <p class="ticket-price">17 EURO</p>
                 <img src="https://reloadwavmedia.s3.eu-central-1.amazonaws.com/Images/reload_wei%C3%9F.png" class="ticket-img">
-                <a class="ticket-link" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">STANDARD</a>
+                <a class="ticket-link-disabled" href="https://www.eventbrite.com/e/reload-registrierung-755860147047" target="_blank">STANDARD</a>
             </div>
         </div>
 
         <div class="ticket-info">
-            <!-- <div class="ticket-description">
+            <div class="ticket-description">
                 <p class="ticket-description-head">PRE-SALE</p>
                 <ul class="ticket-description-list">
                     <li>Available even before announcment of the next event, watch out!</li>
@@ -32,7 +32,7 @@
                     <li>Limited quantity</li>
                     <li>Cheapest ticket with 10€</li>
                 </ul>
-            </div> -->
+            </div>
             <div class="ticket-description">
                 <p class="ticket-description-head">EARLY BIRD</p>
                 <ul class="ticket-description-list">
@@ -42,14 +42,14 @@
                     <li>Middle price category with 10€</li>
                 </ul>
             </div>
-            <!-- <div class="ticket-description">
+            <div class="ticket-description">
                 <p class="ticket-description-head">STANDARD</p>
                 <ul class="ticket-description-list">
                     <li>Avalaible two weeks after announcment</li>
                     <li>For all those who want to party spontaneously</li>
                     <li>Most expensive ticket with 17€</li>
                 </ul>
-            </div> -->
+            </div>
         </div>
 
         <!-- <div style="padding: 0;">

@@ -546,6 +546,21 @@ summary {
     margin: 3rem;
 }
 
+.ticket-frame-disabled{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30rem;
+    width: 9rem;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-color: white;
+    flex: 1;
+    margin: 3rem;
+    opacity: 0.4;
+}
+
 .ticket-img {
     width: 12.5rem;
     height: 7.8rem;
@@ -594,6 +609,18 @@ summary {
     padding: 1rem;
     transform: translate(0, 10rem);
     font-family: 'NokiaKokia';
+}
+
+.ticket-link-disabled {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transform: translate(0, 10rem);
+    font-family: 'NokiaKokia';
+    pointer-events: none;
 }
 
 .ticket-link:visited{
