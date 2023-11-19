@@ -43,7 +43,7 @@
                 <div class="next-event-list">
                   <ul>
                     <li class="time-and-date">When: 24.11.23</li>
-                    <li class="location">Where: Club Subway Cologne</li> <!-- Also possible to insert a google maps link to the location -->
+                    <li class="location">Where: Cologne, Club Subway</li> <!-- Also possible to insert a google maps link to the location -->
                   </ul>
                 </div>
                 <details class="event-info">

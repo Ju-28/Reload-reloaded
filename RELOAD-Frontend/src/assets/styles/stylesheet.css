@@ -301,7 +301,7 @@ footer p {
 }
 
 .more-content-headline {
-    src: url("src/assets/fonts/NokiaKokia.woff2");
+    src: url("../src/assets/fonts/NokiaKokia.woff2");
     font-family: 'NokiaKokia';
     font-size: 350%;
     margin-top: 1.5rem;
@@ -383,7 +383,7 @@ summary {
 }
 
 .reload-word {
-    src: url("src/assets/fonts/NokiaKokia.woff27");
+    src: url("../src/assets/fonts/NokiaKokia.woff27");
     font-family: 'NokiaKokia';
     font-size: medium;
     height: inherit;
