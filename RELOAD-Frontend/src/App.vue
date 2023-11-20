@@ -178,7 +178,7 @@ export default {
   content: '';
   border-bottom: solid 0.3rem white;  
   transform: scaleX(0);  
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.15s ease-in-out;
   width: 100%;
 }
 
