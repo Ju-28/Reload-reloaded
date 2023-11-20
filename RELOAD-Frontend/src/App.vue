@@ -1,33 +1,32 @@
 <!-- Base template with navbar and home menu -->
 <template v-if="$width < 1500">
   <div id="wrapper">
-    <div class="burger-menu" @click="showMobileMenu = !showMobileMenu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+    <div class="burger-menu" @click="toggleMobileMenu" :class="{ 'open': showMobileMenu }">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+    </div>
+    <nav class="navbar" v-bind:class="{ 'visible': showMobileMenu }">
+      <div class="navbar-left">
+        <router-link to="/" class="navbar-Item">RELOAD</router-link>
       </div>
-      <nav class="navbar" v-bind:class="{ 'visible': showMobileMenu }">
-          <div class="navbar-left">
-            <router-link to="/" class="navbar-Item">RELOAD</router-link>
-          </div>
-          <div class="navbar-right">
-            <router-link to="/tickets" class="navbar-Item">TICKETS</router-link>
-            <router-link to="/galery" class="navbar-Item">GALERY</router-link>
-          <!-- <router-link to="/contact" class="navbar-Item">KONTAKT</router-link> -->
-        </div>
-      </nav>
+      <div class="navbar-right">
+        <router-link to="/tickets" class="navbar-Item">TICKETS</router-link>
+        <router-link to="/galery" class="navbar-Item">GALERY</router-link>
+        <!-- <router-link to="/contact" class="navbar-Item">KONTAKT</router-link> -->
+      </div>
+    </nav>
 
-    
-      <section class="section-page">
-        <router-view/>
-      </section>
+    <section class="section-page">
+      <router-view />
+    </section>
   </div>
-  
+
   <footer>
-      <p class="has-text-centered" id="footer-instagram"><a href="https://www.instagram.com/reload.wav" target="_blank" class="fab fa-instagram"></a></p>
-      <p class="has-text-centered"><router-link to="/impressum">Impressum</router-link></p>
-      <p class="has-text-centered">©2023 by <span class="reload-word">RELOAD</span></p>
-    </footer>
+    <p class="has-text-centered" id="footer-instagram"><a href="https://www.instagram.com/reload.wav" target="_blank" class="fab fa-instagram"></a></p>
+    <p class="has-text-centered"><router-link to="/impressum">Impressum</router-link></p>
+    <p class="has-text-centered">©2023 by <span class="reload-word">RELOAD</span></p>
+  </footer>
 </template>
 
 <script>
@@ -107,6 +106,17 @@ export default {
       display: none;
   }
 
+.burger-menu.open .bar1 {
+  transform: rotate(-45deg) translate(-15px, 12px);
+}
+  
+.burger-menu.open .bar2 {
+  opacity: 0;
+}
+  
+.burger-menu.open .bar3 {
+  transform: rotate(45deg) translate(-15px, -12px);
+}
 
 /* Add the visible class to show the navbar */
 .navbar.visible {
@@ -135,12 +145,14 @@ export default {
 .navbar-left {
   background-color: transparent;
   justify-content: flex-start;
+  padding-left: 6rem;
 }
 
 .navbar-right {
   background-color: transparent;
   justify-content: flex-end;
   box-sizing: content-box;
+  padding-right: 6rem;
 }
 
 .navbar-Item {
@@ -162,6 +174,7 @@ export default {
 
 .navbar-Item:after {
   display: block;
+  margin-top: 0.5rem;
   content: '';
   border-bottom: solid 0.3rem white;  
   transform: scaleX(0);  
@@ -208,6 +221,7 @@ export default {
       padding: 0;
     }
     .navbar-left {
+      padding-left: 0;
       margin-bottom: 0.4rem;
     }
 
@@ -234,5 +248,9 @@ export default {
   .navbar.visible {
       font-size: medium;
     }
+
+  .navbar-left {
+    padding-left: 0;
+  }
   }
 </style>
