@@ -39,7 +39,7 @@
                     <li>Avalaible on date of announcment of the next event</li>
                     <li>For all those who are not sure yet</li>
                     <li>Limited quantity</li>
-                    <li>Middle price category with 10€</li>
+                    <li>Middle price category with 12€</li>
                 </ul>
             </div>
             <div class="ticket-description">

@@ -11,7 +11,7 @@
     </div>
     <div class="new-content">
       <div class="more-content-section-1">
-        <h3 class="more-content-headline">WHAT RELOAD MEANS</h3>
+        <h3 class="more-content-headline">WHAT RELOAD IS ABOUT</h3>
           <section class="vision-content"><span class="reload-word">RELOAD</span> is a party series from Düsseldorf, 
             where people get together who feel closely connected to hiphop culture and 
             the happenings around it. The intention of the event is to finally get rid 
@@ -31,7 +31,7 @@
               You can expect a fine selection of tracks from different genres like Trap, Hip-Hop, 
               R&B and Garage.
             </p>
-            <p>Also don't forget to check out our <a class="galery-link" href="/galery">galery</a> to get
+            <p>Also don't forget to check out our <router-link to="/galery" class="galery-link">galery</router-link> to get
               some insights of recent events and get yourself hyped for the next round!
             </p>
           </section>
@@ -51,17 +51,17 @@
                   <div class="tickets-n-djs">
                     <ul class="tickets-list">
                       <a id="event-tickets" href="/tickets">Tickets:</a>
-                      <li>Guestlist: 10€</li>
-                      <li>Box-Office: 12€</li>
+                      <li>- Guestlist: 10€</li>
+                      <li>- Box-Office: 12€</li>
                       <!-- <li>Standard: 17€</li> -->
                     </ul>
                     
                     <ul class="djs-list">
                       <p id="djs">DJs:</p>
-                      <li><a href="https://www.instagram.com/chiefinspectorlelke/" target="_blank"><i class="fa-solid fa-arrow-right"></i> CHIEF</a></li>
-                      <li><a href="https://www.instagram.com/bash.ofc/" target="_blank"><i class="fa-solid fa-arrow-right"></i> BA$H</a></li>
-                      <li><a href="https://www.instagram.com/fabiana.stwn/" target="_blank"><i class="fa-solid fa-arrow-right"></i> Fabiana</a></li>
-                      <li><a href="https://www.instagram.com/i.am.keisha/" target="_blank"><i class="fa-solid fa-arrow-right"></i> Keisha</a></li>
+                      <li><i class="fa-solid fa-arrow-right"></i> <a href="https://www.instagram.com/chiefinspectorlelke/" target="_blank">CHIEF</a></li>
+                      <li><i class="fa-solid fa-arrow-right"></i> <a href="https://www.instagram.com/bash.ofc/" target="_blank">BA$H</a></li>
+                      <li><i class="fa-solid fa-arrow-right"></i> <a href="https://www.instagram.com/fabiana.stwn/" target="_blank">Fabiana</a></li>
+                      <li><i class="fa-solid fa-arrow-right"></i> <a href="https://www.instagram.com/i.am.keisha/" target="_blank">Keisha</a></li>
                     </ul>
                   </div>
                   <h5 class="about-event">About the next event</h5>

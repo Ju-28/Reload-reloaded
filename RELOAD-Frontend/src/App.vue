@@ -12,7 +12,7 @@
           </div>
           <div class="navbar-right">
             <router-link to="/tickets" class="navbar-Item">TICKETS</router-link>
-            <router-link to="/galery" class="navbar-Item">GALERIE</router-link>
+            <router-link to="/galery" class="navbar-Item">GALERY</router-link>
           <!-- <router-link to="/contact" class="navbar-Item">KONTAKT</router-link> -->
         </div>
       </nav>
