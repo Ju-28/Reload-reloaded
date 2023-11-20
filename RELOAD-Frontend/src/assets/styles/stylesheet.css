@@ -117,7 +117,45 @@ footer p {
 }
 
 .flicker-animation {
+    -webkit-animation: flicker 1s forwards;
     animation: flicker 1s forwards;
+}
+
+@-webkit-keyframes flicker {
+    10% {
+        -webkit-filter: drop-shadow(0.3rem 0.3rem 1rem #0013FF);
+        opacity: 0.3;
+    }
+    22% {
+        -webkit-filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.1;
+    }
+    30% {
+        -webkit-filter: drop-shadow(-0.8rem 0.5rem 0.8rem #0013FF);
+        opacity: 0.5;
+    }
+    37% {
+        -webkit-filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.4;
+    }
+    45% {
+        -webkit-filter: drop-shadow(-1rem 0 1rem #0013FF);
+    }
+    58% {
+        -webkit-filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.4;
+    }
+    75% {
+        -webkit-filter: drop-shadow(0.2rem -0.5rem 0.7rem #0013FF);
+        opacity: 0.8;
+    }
+    92% {
+        -webkit-filter: drop-shadow(-1rem 0 1rem #0013FF);
+    }
+    100% {
+        -webkit-filter: drop-shadow(0 0 3rem #0013FF);
+        opacity: 1;
+    }
 }
 
 @keyframes flicker {
@@ -158,7 +196,49 @@ footer p {
 }
 
 .flicker-off {
+    -webkit-animation: flicker-off 1s;
     animation: flicker-off 1s;
+}
+
+@-webkit-keyframes flicker-off {
+    0% {
+        -webkit-filter: drop-shadow(0 0 3rem #0013FF);
+        opacity: 1;
+    }
+    22% {
+        -webkit-filter: drop-shadow(-1rem 0 1rem #0013FF);
+        opacity: 0.8;
+    }
+    30% {
+        -webkit-filter: drop-shadow(0.2rem -0.5rem 0.7rem #0013FF);
+    }
+    37% {
+        -webkit-filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.4;
+    }
+    45% {
+        -webkit-filter: drop-shadow(-1rem 0 1rem #0013FF);
+    }
+    55% {
+        opacity: 0.4;
+    }
+    58% {
+        -webkit-filter: drop-shadow(0 0 0 #0013FF);
+    }
+    70% {
+        opacity: 0.5;
+    }
+    75% {
+        -webkit-filter: drop-shadow(-0.8rem 0.5rem 0.8rem #0013FF);
+    }
+    92% {
+        -webkit-filter: drop-shadow(0 0 0 #0013FF);
+        opacity: 0.3;
+    }
+    100% {
+        -webkit-filter: drop-shadow(0 0 0);
+        opacity: 0.3;
+    }
 }
 
 @keyframes flicker-off {
@@ -199,7 +279,6 @@ footer p {
     100% {
         filter: drop-shadow(0 0 0);
         opacity: 0.3;
-        /* heigt: 0; */
     }
 }
 
@@ -353,8 +432,16 @@ summary {
     justify-content: space-around;
 }
 
+.tickets-list {
+    list-style: none;
+}
+
 #djs {
     margin: 0;
+}
+
+.djs-list {
+    list-style: none;
 }
 
 
