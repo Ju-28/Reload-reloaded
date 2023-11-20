@@ -344,6 +344,7 @@ footer p {
 
 summary {
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 
 .tickets-n-djs {
