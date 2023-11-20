@@ -52,7 +52,7 @@
                     <ul class="tickets-list">
                       <a id="event-tickets" href="/tickets">Tickets:</a>
                       <li>- Guestlist: 10€</li>
-                      <li>- Box-Office: 12€</li>
+                      <li>- Box-Office: 13€</li>
                       <!-- <li>Standard: 17€</li> -->
                     </ul>
                     
