@@ -2,15 +2,6 @@
 ::-webkit-scrollbar {
     width: 0; /* Set the width of the scrollbar */
   }
-  
-  /* ::-webkit-scrollbar-track {
-    background: black;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 3px;
-  } */
 
   @font-face {
     font-family: 'NokiaKokia';
@@ -286,8 +277,9 @@ footer p {
     display: flex;
     flex-direction: column;
     border: 0;
-    margin-top: 10rem;
+    margin-top: 7rem;
     color: white;
+    background-color: transparent;
     font-size: 8rem;
     transform: scale(2,1);
     cursor: pointer;
@@ -296,6 +288,7 @@ footer p {
 .scroll-down-button i {
     position: relative;
     animation: scrollDown 2s ease-in-out infinite;
+    background-color: transparent;
   }
 
 @keyframes scrollDown {
@@ -960,7 +953,6 @@ select{
     align-self: flex-start;
 }
 
-
 @media (max-width: 1025px) {
 
     #tickets {
@@ -998,13 +990,13 @@ select{
 @media (max-height: 1300px) {
 
     .home-img-wrapper {
-        margin-top: 10rem;
+        margin-top: 7rem;
         max-width: 55%;
         height: auto;
     }
 
     .scroll-down-button {
-        margin-top: 3rem;
+        margin-top: 1rem;
         color: white;
         font-size: 5rem;
     }
@@ -1159,8 +1151,12 @@ select{
 
 }
 
-@media (max-width: 412px) and (max-height: 915px) {
+@media (max-width: 432px) and (max-height: 935px) {
     
+    .more-content-headline {
+        font-size: 100%;
+    }
+
     .new-content {
         margin-top: 40rem;
     }
