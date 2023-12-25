@@ -34,7 +34,7 @@ export default {
   data() {
   },
   mounted() {
-    document.title = 'Galerie | RELOAD'
+    document.title = 'Galery | RELOAD'
   }
 }
 
