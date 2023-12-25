@@ -12,7 +12,7 @@
       </div>
       <div class="navbar-right">
         <router-link to="/tickets" class="navbar-Item">TICKETS</router-link>
-        <router-link to="/galerie" class="navbar-Item">GALERIE</router-link>
+        <router-link to="/galerie" class="navbar-Item">GALERY</router-link>
         <!-- <router-link to="/contact" class="navbar-Item">KONTAKT</router-link> -->
       </div>
     </nav>
@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 
 export default {
 
@@ -54,7 +53,7 @@ export default {
         }
     });
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener("resize", this.handleResize);
   },
   methods: {
