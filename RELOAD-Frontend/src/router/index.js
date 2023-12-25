@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 import Tickets from '../views/Tickets.vue'
-import Galery from '../views/Galerie.vue'
+import Galery from '../views/Galery.vue'
 // import Contact from '../views/Contact.vue'
 import Impressum from '../views/Impressum.vue'
 
@@ -30,8 +30,8 @@ const routes = [
     component: Tickets
   },
   {
-    path: '/galerie',
-    name: 'Galerie',
+    path: '/galery',
+    name: 'Galery',
     component: Galery
   },
   // {
